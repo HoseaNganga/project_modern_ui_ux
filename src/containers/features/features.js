@@ -1,7 +1,7 @@
 import "./features.css";
 import { useState } from "react";
 const Features = () => {
-  const [featuresData, setFeaturesData] = useState([
+  const [featuresData] = useState([
     {
       title: "Improving end distrusts instantly",
       text: "From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.",
