@@ -1,0 +1,164 @@
+.headerContainer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.gpt3Header {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.styleHeader {
+  background: var(--gradient-text);
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+
+.gpt3Header p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-text);
+  margin-top: 1.5rem;
+}
+
+.headerContent {
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerContent input {
+  flex: 2;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  padding: 0 1rem;
+  outline: none;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.headerContent button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: #ff4820;
+  border: 2px solid #ff4820;
+  padding: 0 1rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.headerContentPeople {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.headerContentPeople img {
+  width: 181.79px;
+  height: 38px;
+}
+
+.headerContentPeople p {
+  margin: 0 0 0 1rem;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+}
+
+.headeraiImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headeraiImage img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .headerContainer {
+    flex-direction: column;
+  }
+
+  .gpt3Header {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .styleHeader {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .gpt3Header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .headerContentPeople {
+    flex-direction: column;
+  }
+
+  .headerContentPeople p {
+    margin: 0;
+  }
+
+  .headerContent input,
+  .headerContent button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .styleHeader {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .gpt3Header p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .headerContent input,
+  .headerContent button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,55 @@
+.CTA {
+  padding: 1rem;
+}
+
+.ctaContainer {
+  background: var(--gradient-text);
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: var(--font-family);
+}
+
+.ctaContainer h2 {
+  text-transform: capitalize;
+}
+
+.ctaflex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ctaflex p {
+  text-transform: capitalize;
+  display: grid;
+  align-items: center;
+}
+
+.ctaflex button {
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  font-family: var(--font-family);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ctaflex button:hover {
+  background-color: white; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+@media screen and (max-width: 680px) {
+  .ctaflex button {
+    padding: 0.7rem 1rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .ctaflex {
+    display: grid;
+  }
+}

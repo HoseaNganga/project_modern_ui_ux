@@ -1,0 +1,134 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.navbarlinks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+.navbarLinksLogo {
+  margin-right: 2rem;
+}
+.navbarLinksLogo img {
+  width: 62px;
+  height: 16px;
+}
+
+.navbarLinksContainer {
+  list-style-type: none;
+  color: white;
+  display: flex;
+}
+
+.navbarMenuContainerLinks {
+  list-style-type: none;
+}
+
+.navbarLinksContainer li,
+.navbarSign p,
+.navbarMenuContainerLinks li,
+.navbarMenuContainerLinksSign p {
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.navbarSign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbarSign button,
+.navbarMenuContainerLinksSign button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #ff4820;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navbarMenu {
+  margin-left: 1rem;
+  position: relative;
+  display: none;
+}
+
+.navbarMenu svg {
+  cursor: pointer;
+}
+
+.navbarMenuContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbarMenuContainer li {
+  margin: 1rem 0;
+}
+
+.navbarMenuContainerLinksSign {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbarLinksContainer {
+    display: none;
+  }
+
+  .navbarMenu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navBar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navBar {
+    padding: 2rem;
+  }
+
+  .navbarSign {
+    display: none;
+  }
+
+  .navbarMenuContainer {
+    top: 20px;
+  }
+
+  .navbarMenuContainerLinksSign {
+    display: block;
+  }
+}
