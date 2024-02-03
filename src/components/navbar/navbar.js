@@ -16,16 +16,16 @@ const Navbar = () => {
           <Link to={"/"}>
             <li>Home</li>
           </Link>
-          <Link to={"/about"}>
+          <Link to={"/t"}>
             <li>What is GPT-3</li>
           </Link>
-          <Link to={"/possibility"}>
+          <Link to={"/"}>
             <li>Open Ai</li>
           </Link>
-          <Link to={"/features"}>
+          <Link to={"/"}>
             <li>Case Studies</li>
           </Link>
-          <Link to={"/blog"}>
+          <Link to={"/"}>
             <li>Library</li>
           </Link>
         </ul>
